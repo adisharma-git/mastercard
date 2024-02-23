@@ -7,7 +7,7 @@
   color: white;
 }
 section {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 100%;
   background: #121321;
@@ -17,7 +17,7 @@ section {
 }
 section::before {
   content: "";
-  position: fixed;
+  position: absolute;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
@@ -26,7 +26,7 @@ section::before {
 }
 section::after {
   content: "";
-  position: fixed;
+  position: absolute;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
@@ -84,5 +84,51 @@ h5.number {
   letter-spacing: 1px;
 }
 h5.name {
+  margin-top: 20px;
+}
+
+.card.backface {
+  border: none;
+  padding: 15px 25px 25px 25px;
+}
+.card.card.backface h6 {
+  font-size: 8px;
+}
+
+.card.backface .sign {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 80px;
+  height: 40px;
+  width: 85%;
+  background: repeating-linear-gradient(
+    #fff,
+    #fff 3px,
+    #efefef 0px,
+    #efefef 9px
+  );
+  border-radius: 6px;
+}
+.card.backface .magneticstrip {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background: black;
+}
+.sign i {
+  font-size: 12px;
+  color: black;
+  background: white;
+  margin-right: -30px;
+  border-radius: 4px;
+  padding: 4px 6px;
+  z-index: -1;
+}
+
+.card.backface h5 {
+  font-size: 8px;
   margin-top: 20px;
 }
