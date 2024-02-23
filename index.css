@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 section {
-  position: relative;
+  position: static;
   height: 100vh;
   width: 100%;
   background: #121321;
