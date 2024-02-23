@@ -5,13 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BUSINESS CARD</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./favicon.webp" type="image/x-icon" />
   </head>
   <body>
     <section>
       <div class="container">
-        <div class="card">
-          <p style="color: aliceblue">ID card layout by Aditya</p>
+        <div class="card frontface">
+          <!-- <p style="color: aliceblue">ID card layout by Aditya</p> -->
+          <header>
+            <span class="logo">
+              <img
+                src="./Mastercard-Logo.png"
+                alt="master card logo"
+                class="m"
+              />
+              <h5>Master card</h5>
+            </span>
+            <img src="./chip-logo.png" alt="" class="chip" />
+          </header>
+          <div class="card-details">
+            <div class="name-number">
+              <h6>Card Number</h6>
+              <h5 class="number">1234 1234 1234 1234</h5>
+              <h5 class="name">ADITYA SHARMA</h5>
+            </div>
+            <div class="valid">
+              <h6>Valid Thru</h6>
+              <h5>04/30</h6>
+            </div>
+          </div>
         </div>
+
+        <div class="card backface">
+           <h6>For customer service contact at +91 1234567890 or email at mastercard@gmail.com</h6>
+           <span class="magneticstrip"></span>
+           <div class="sign">
+            <i>005</i>
+           </div>
+            <h5 >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quasi accusantium aut dolores dolore! Aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt vero debitis nulla vel consequuntur.
+            </h5>
+          </div>
       </div>
     </section>
   </body>
