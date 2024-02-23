@@ -7,17 +7,18 @@
   color: white;
 }
 section {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   background: #121321;
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
 section::before {
   content: "";
-  position: absolute;
+  position: fixed;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
@@ -26,7 +27,7 @@ section::before {
 }
 section::after {
   content: "";
-  position: absolute;
+  position: fixed;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
@@ -38,8 +39,11 @@ section::after {
   width: 375px;
   position: relative;
   z-index: 100;
+  transition: 0.6s;
+  transform-style: preserve-3d;
 }
 .container .card {
+  position: absolute;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
@@ -48,7 +52,12 @@ section::after {
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
+  backface-visibility: hidden;
 }
+.container:hover {
+  transform: rotateY(180deg);
+}
+
 .frontface header,
 .frontface .logo {
   display: flex;
@@ -90,6 +99,7 @@ h5.name {
 .card.backface {
   border: none;
   padding: 15px 25px 25px 25px;
+  transform: rotateY(180deg);
 }
 .card.card.backface h6 {
   font-size: 8px;
