@@ -7,7 +7,7 @@
   color: white;
 }
 section {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   background: #121321;
@@ -17,7 +17,7 @@ section {
 }
 section::before {
   content: "";
-  position: absolute;
+  position: fixed;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
@@ -26,7 +26,7 @@ section::before {
 }
 section::after {
   content: "";
-  position: absolute;
+  position: fixed;
   height: 240px;
   width: 240px;
   background: linear-gradient(90deg, rgb(225, 11, 228), white);
