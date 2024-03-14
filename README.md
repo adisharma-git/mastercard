@@ -17,7 +17,7 @@ Check out the live demo here. [LINK](https://adisharma-git.github.io/mastercard/
 # Usage
 - Clone the repository:
 ```
-git clone https://github.com/your-username/glass-mastercard.git
+git clone https://github.com/adisharma-git/mastercard
 ```
 - Open index.html in your preferred web browser to view the Mastercard.
 
